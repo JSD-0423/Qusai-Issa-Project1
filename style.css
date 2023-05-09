@@ -13,5 +13,65 @@
 
 
 body {
-
+    height: 1920px;
+    margin: 0px;
 }
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  
+    header {
+    height: 150px;
+    border-bottom: #333333 1px solid;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    border-bottom:#333333 5px solid;
+    width: 100%;
+  }
+
+  .navbar-buttons-div {
+    display: flex;
+    margin-right: 50px;
+    gap: 12px;
+  }
+
+  #logo {
+    color: var(--brand-primary);
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-left: 50px;
+    font-size: 42px;
+  }
+
+  nav > div > button {
+    color: var(--body-text);
+    height: 60px;
+    width: 80px;
+    background-color: var(--bg_default);
+    border: 1px var(--secondary-color) solid;
+    border-radius: 8px;
+    
+  }
+
+  ion-icon {
+    height: 55%;
+    width: 55%;
+  }
+  
