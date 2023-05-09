@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --primary-color: #007bff;
@@ -9,12 +10,14 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
+    font-family: 'Lato', sans-serif;
   }
 
 
 body {
     height: 1920px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 .fixed-top {
@@ -75,3 +78,23 @@ body {
     width: 55%;
   }
   
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  h1 {
+    font-size: 42px;
+    color: var(--brand-secondary);
+    margin: 0;
+    margin-left: 18px;
+    font-family: sans-serif;
+  }
+
+  .welcome-section > p {
+    font-size: 32px;
+    margin-top: 8px;
+    margin-left: 18px;
+
+  }
