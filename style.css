@@ -125,6 +125,7 @@ h1 {
   background-color: var(--bg_default);
   border-radius: 12px;
   padding: 18px;
+  padding-left: 0;
   padding-top: 8px;
   box-shadow: 0px 0px 5px 0px  rgba(0,0,0,0.5);
   padding-bottom: 0;
@@ -136,10 +137,12 @@ h1 {
   align-items: center;
   gap: 24px;
   height: 100%;
+  padding-left: 16px;
 }
 
 .sort-div {
   display: grid;
+  padding-left: 18px;
   grid-template-columns:1% 49% 1% 49%;
   height: 100%;
 }
@@ -172,7 +175,6 @@ h1 {
 
 hr {
   margin: 0;
-  margin-left:-18px;
   margin-right:-18px;
   width: auto;
   color: var(--body-text);
@@ -308,7 +310,9 @@ color: var(--gold-color);
   .search-div {
     width: 60%;
     display: flex;
+    height:100%;
     align-items: flex-start;
+
   }
   .search-card >* textarea {
   display: flex;
