@@ -22,7 +22,50 @@ const cardDetails = [
         rating: 4,
         imageUrl: 'assits/cards/javascript.jpg',
         Author: "Emily chen",
-      }
+      },     {
+        title: 'JavaScript',
+        description: 'Web devalopment languege',
+        rating: 4,
+        imageUrl: 'assits/cards/javascript.jpg',
+        Author: "Emily chen",
+      },     {
+        title: 'JavaScript',
+        description: 'Web devalopment languege',
+        rating: 4,
+        imageUrl: 'assits/cards/javascript.jpg',
+        Author: "Emily chen",
+      },
+      {
+        title: 'HTML',
+        description: 'Web devalopment languege',
+        rating: 4,
+        imageUrl: 'assits/cards/html.png',
+        Author: "sarah smith",
+      },     {
+          title: 'CSS',
+          description: 'Web devalopment languege',
+          rating: 5,
+          imageUrl: 'assits/cards/css.webp',
+          Author: "david Lee",
+        },     {
+          title: 'JavaScript',
+          description: 'Web devalopment languege',
+          rating: 4,
+          imageUrl: 'assits/cards/javascript.jpg',
+          Author: "Emily chen",
+        },     {
+          title: 'JavaScript',
+          description: 'Web devalopment languege',
+          rating: 4,
+          imageUrl: 'assits/cards/javascript.jpg',
+          Author: "Emily chen",
+        },     {
+          title: 'JavaScript',
+          description: 'Web devalopment languege',
+          rating: 4,
+          imageUrl: 'assits/cards/javascript.jpg',
+          Author: "Emily chen",
+        }
   ];
 
   document.querySelector('.card-section-holder').innerHTML = cardDetails.map((card) => `

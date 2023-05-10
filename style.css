@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
 
 :root {
     --primary-color: #007bff;
@@ -11,29 +11,24 @@
     --lines-color: #DDDDDD;
     --body-text: #333333;
     --heart-color: #DC143C;
+    --gold-color: #cdb73b;
     font-family: 'Lato', sans-serif;
   }
 
 
 body {
-    height: 1920px;
+    height: fit-content;
     margin: 0px;
     font-family: sans-serif;
-
+    overflow-x: hidden;
 }
 
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
 
   header {
   height: 90px;
   border-bottom: #333333 1px solid;
   box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+  width: 100%;
 }
 
 .navbar {
@@ -52,7 +47,7 @@ body {
 
 .navbar-buttons-div {
   display: flex;
-  margin-right: 50px;
+  margin-right: 30px;
   gap: 12px;
 }
 
@@ -81,6 +76,7 @@ ion-icon {
 }
 
 .welcome-section {
+  margin-top: 90px;
   display: flex;
   flex-direction: column;
 }
@@ -94,10 +90,11 @@ h1 {
 }
 
 .welcome-section > p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-top: 8px;
   margin-left: 18px;
   font-weight: 100;
+  padding-right: 8px;
 }
 
 .search-section {
@@ -217,6 +214,7 @@ width: 100%;
 .rating-icon {
 height: 18px;
 width: 18px;
+color: var(--gold-color);
 }
 
 .stars-div {
@@ -225,4 +223,61 @@ width: 18px;
   padding-left: 8px;
   display: inline-flex;
   align-self: start;
+}
+
+.footer-msg {
+  background-color: var(--bg_body);
+  margin: 0;
+  display: none;
+}
+
+.footer-msg > p {
+
+  margin: 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-msg {
+    display: block;
+    align-items: center;
+  }
+
+  .welcome-section {
+    align-items: center;
+  }
+
+  .search-card {
+    flex-direction: row;
+  }
+
+  .search-card > textarea {
+    font-size: 10px;
+  }
+
+  .card-section-holder {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+  
+  .card-div {
+    box-shadow: 0;
+  }
+  .card-description {
+    font-size: 12px;
+    display: inline;
+  }
+
+  footer {
+    
+    display: flex;
+    margin: 0;
+    box-shadow: 0 0px 3px 0px rgba(0,0,0,0.3);
+    padding-left: 24px;
+  }
+  footer > h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
 }
