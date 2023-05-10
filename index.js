@@ -27,9 +27,11 @@ const cardDetails = [
   document.querySelector('.card-section-holder').innerHTML = cardDetails.map((card) => `
     
         <div class="card-div">
-            <img class= "card-image" src=${card.imageUrl} alt="${card.title}">
-            <h4 class="card-title px-2">${card.title}</h4>
-            <span class="card-author">${card.Author}</span>
+            
+                <img class= "card-image" src=${card.imageUrl} alt="${card.title}">
+                <h4 class="card-title px-2">${card.title}</h4>
+                <span class="card-author">${card.Author}</span>
+            
         </div>
     
 `).join('');

@@ -30,7 +30,7 @@ body {
 }
 
   header {
-  height: 150px;
+  height: 90px;
   border-bottom: #333333 1px solid;
   box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
 }
@@ -41,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  height: 150px;
+  height: 90px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #fff;
@@ -61,14 +61,14 @@ body {
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
-  margin-left: 50px;
-  font-size: 42px;
+  margin-left: 25px;
+  font-size: 26px;
 }
 
 nav > * button {
   color: var(--body-text);
-  height: 60px;
-  width: 80px;
+  height: 35px;
+  width: 50px;
   background-color: var(--bg_default);
   border: 1px var(--secondary-color) solid;
   border-radius: 8px;
@@ -85,7 +85,7 @@ ion-icon {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 32px;
   color: var(--brand-secondary);
   margin: 0;
   margin-left: 18px;
@@ -93,24 +93,25 @@ h1 {
 }
 
 .welcome-section > p {
-  font-size: 32px;
+  font-size: 1.5rem;
   margin-top: 8px;
   margin-left: 18px;
+  font-weight: 100;
 }
 
 .search-section {
   height: fit-content;
   background-color: var(--bg_body);
-  padding-top: 25px ;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 25px;
+  padding-top: 25px ;
 }
 
 .search-section > * ion-icon {
-  height: 60px;
-  width: 60px;
+  height: 100%;
+  width: 36px;
 }
 
 .search-card {
@@ -123,7 +124,7 @@ h1 {
   background-color: var(--bg_default);
   border-radius: 12px;
   padding: 18px;
-  padding-top: 36px;
+  padding-top: 8px;
   box-shadow: 0px 0px 5px 0px  rgba(0,0,0,0.5);
 
 }
@@ -135,12 +136,11 @@ h1 {
 }
 .search-card >* textarea {
   border: 0px;
-  font-size: 2.5rem;
-  overflow:hidden;
+  font-size: 1.5rem;
+  overflow: hidden;
   width: 100%;
-  height: 50px;
-  vertical-align:baseline;
-  padding-bottom: 6px;
+  height: 40px;
+  padding-top: 6px;
 }
 
 .search-card >* ion-icon {
@@ -159,6 +159,9 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
+  padding: 12px;
+
 }
 
 .card-image {
@@ -174,8 +177,12 @@ width: 70%;
 }
 
 .card-div {
-  background-color: var(--bg_body);
+  background-color: var(--bg_default);
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  box-shadow: 0 0px 4px 0px rgba(0,0,0,0.3);
+  border-radius: 12px;
 }
+
