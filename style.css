@@ -100,12 +100,12 @@ h1 {
 
 .search-section {
   height: fit-content;
-  height: 1920px;
   background-color: var(--bg_body);
   padding-top: 25px ;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 25px;
 }
 
 .search-section > * ion-icon {
@@ -152,4 +152,30 @@ hr {
   margin-right:-18px;
   width: auto;
   color: var(--body-text);
+}
+
+.card-section-holder {
+  background-color: var(--bg_body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-image {
+width: 70%;
+}
+
+.card-title {
+
+}
+
+.card-author {
+
+}
+
+.card-div {
+  background-color: var(--bg_body);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
