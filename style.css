@@ -218,7 +218,8 @@ hr {
 }
 
 .card-image {
-width: 100%;
+  width: 100%;
+  height: 45%;
 }
 
 .card-title {
@@ -256,6 +257,7 @@ width: 100%;
   background-color: var(--bg_default);
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   box-shadow: 0 0px 4px 0px rgba(0,0,0,0.3);
