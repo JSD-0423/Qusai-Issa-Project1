@@ -1,33 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+@import url('https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
 
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --brand-primary: #0768AC;
-    --brand-secondary: #03C180;
-    --bg_default: #FFFFFF;
-    --bg_body: #F0F9FF;
-    --bg_body2: #d4ecfc;    
-    --lines-color: #DDDDDD;
-    --body-text: #333333;
-    --heart-color: #DC143C;
-    --gold-color: #cdb73b;
-    font-family: 'Lato', sans-serif;
-  }
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #fff;
+  --bg_body: #f0f9ff;
+  --bg_body2: #d4ecfc;
+  --lines-color: #ddd;
+  --body-text: #333;
+  --heart-color: #dc143c;
+  --gold-color: #cdb73b;
 
-
-body {
-    height: fit-content;
-    margin: 0px;
-    font-family: sans-serif;
-    overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
 }
 
+body {
+  height: fit-content;
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
 
-  header {
+header {
   height: 90px;
-  border-bottom: #333333 1px solid;
-  box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);
+  border-bottom: #333 1px solid;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.5);
   width: 100%;
 }
 
@@ -41,7 +41,7 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #fff;
-  border-bottom:#333333 0px solid;
+  border-bottom: #333 0 solid;
   width: 100%;
 }
 
@@ -54,7 +54,6 @@ body {
 #logo {
   color: var(--brand-primary);
   text-decoration: none;
-  font-size: 20px;
   line-height: 20px;
   font-weight: 700;
   margin-left: 25px;
@@ -76,7 +75,6 @@ ion-icon {
 }
 
 .welcome-section {
-  
   display: flex;
   flex-direction: column;
 }
@@ -84,6 +82,7 @@ ion-icon {
 .welcome-section img {
   width: 100%;
 }
+
 h1 {
   font-size: 32px;
   color: var(--brand-secondary);
@@ -107,7 +106,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   padding-bottom: 25px;
-  padding-top: 25px ;
+  padding-top: 25px;
 }
 
 .search-section > * ion-icon {
@@ -121,15 +120,14 @@ h1 {
   align-self: center;
   width: 90%;
   height: auto;
-  color: #03C180;
+  color: #03c180;
   background-color: var(--bg_default);
   border-radius: 12px;
   padding: 18px;
   padding-left: 0;
   padding-top: 8px;
-  box-shadow: 0px 0px 5px 0px  rgba(0,0,0,0.5);
+  box-shadow: 0 0 5px 0  rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
-
 }
 
 .search-div {
@@ -143,7 +141,7 @@ h1 {
 .sort-div {
   display: grid;
   padding-left: 18px;
-  grid-template-columns:1% 49% 1% 49%;
+  grid-template-columns: 1% 49% 1% 49%;
   height: 100%;
 }
 
@@ -153,29 +151,29 @@ h1 {
 }
 
 #my-vl {
-  border-left: 0px solid var(--secondary-color);
+  border-left: 0 solid var(--secondary-color);
 }
+
 .dropdown {
   padding-bottom: 12px;
 }
 
-.search-card >* textarea {
-  border: 0px;
+.search-card > * textarea {
+  border: 0;
   font-size: 1.5rem;
   overflow: hidden;
   width: 100%;
   height: 40px;
   padding-top: 6px;
-  
 }
 
-.search-card >* ion-icon {
-  color: var(--body-text)
+.search-card > * ion-icon {
+  color: var(--body-text);
 }
 
 hr {
   margin: 0;
-  margin-right:-18px;
+  margin-right: -18px;
   width: auto;
   color: var(--body-text);
 }
@@ -193,10 +191,12 @@ hr {
   font-weight: 700;
   align-self: center;
 }
+
 .dropbtn > ion-icon {
   height: 24px;
-  width: 24px;  
+  width: 24px;
 }
+
 .dropbtn {
   display: flex;
   justify-content: space-between;
@@ -214,7 +214,6 @@ hr {
   align-items: center;
   gap: 32px;
   padding: 12px;
-
 }
 
 .card-image {
@@ -222,30 +221,31 @@ hr {
   height: 45%;
 }
 
+.card-cotants {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
 .card-title {
   display: inline-flex;
   height: 20px;
   width: 100%;
   margin: 0;
-  margin-left: 40px;
-
 }
 
 .card-description {
   height: 20px;
   width: 100%;
-  padding-left: 24px;
+  padding: 0;
   margin: 0;
   margin-top: 16px;
   font-weight: 100;
 }
 
-
 .card-author {
   height: 20px;
   width: 100%;
-  padding-left: 24px;
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 0;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -255,12 +255,9 @@ hr {
 
 .card-div {
   background-color: var(--bg_default);
-  display: flex;
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  align-items: center;
-  box-shadow: 0 0px 4px 0px rgba(0,0,0,0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
   border-radius: 12px;
 }
 
@@ -269,17 +266,15 @@ hr {
   padding-left: 12px;
 }
 
-
 .rating-icon {
-height: 18px;
-width: 18px;
-color: var(--gold-color);
+  height: 18px;
+  width: 18px;
+  color: var(--gold-color);
 }
 
 .stars-div {
   margin-top: 30px;
   margin-bottom: 8px;
-  padding-left: 8px;
   display: inline-flex;
   align-self: start;
 }
@@ -291,7 +286,6 @@ color: var(--gold-color);
 }
 
 .footer-msg > p {
-
   margin: 0;
   text-align: center;
 }
@@ -309,17 +303,19 @@ color: var(--gold-color);
   .dropdown {
     padding-left: 8px;
   }
+
   .search-div {
     width: 60%;
     display: flex;
-    height:100%;
+    height: 100%;
     align-items: flex-start;
+  }
 
+  .search-card > * textarea {
+    display: flex;
+    width: 70%;
   }
-  .search-card >* textarea {
-  display: flex;
-  width: 70%;
-  }
+
   .search-card {
     flex-direction: row;
     padding-top: 0;
@@ -343,32 +339,30 @@ color: var(--gold-color);
 
   .card-section-holder {
     display: grid;
+    gap: 18px;
     grid-template-columns: repeat(5, 1fr);
+  }
 
-  }
-  
   .card-div {
-    box-shadow: 0 0px 1px 0px rgba(0,0,0,0.3);
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
   }
+
   .card-description {
     font-size: 12px;
     display: inline-flex;
     align-self: start;
     height: auto;
-    margin-left: 32px;
-    margin-right: 32px;
-    margin: 0;
-    margin-top: 16px;
     width: 80%;
+    
   }
 
   footer {
-    
     display: flex;
     margin: 0;
-    box-shadow: 0 0px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
     padding-left: 24px;
   }
+
   footer > h3 {
     font-size: 15px;
     font-weight: 700;
