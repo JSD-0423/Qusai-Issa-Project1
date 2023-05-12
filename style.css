@@ -13,8 +13,11 @@
   --body-text: #333;
   --heart-color: #dc143c;
   --gold-color: #cdb73b;
+  --main-padding: 18px;
+  --card-radius: 12px;
 
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+
 }
 
 body {
@@ -22,6 +25,7 @@ body {
   margin: 0;
   font-family: sans-serif;
   overflow-x: hidden;
+
 }
 
 header {
@@ -36,7 +40,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   height: 90px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -55,8 +59,8 @@ header {
   color: var(--brand-primary);
   text-decoration: none;
   line-height: 20px;
-  font-weight: 700;
-  margin-left: 25px;
+  font-weight: 400;
+  margin-left: 18px;
   font-size: 26px;
 }
 
@@ -77,6 +81,40 @@ ion-icon {
 .welcome-section {
   display: flex;
   flex-direction: column;
+  padding-right:var(--main-padding) ;
+  padding-left:var(--main-padding) ;
+}
+
+.welcome-bg {
+  height: 50px;
+  width: 100%;
+
+  
+  
+  /* background-color: aqua; */
+  /* margin: 0;
+  padding-inline: 0; */
+}
+
+.triangle-right {
+  height: 0;
+  width: 50%;
+
+  border-right: 70rem solid var(--brand-secondary);
+  border-bottom: 2.9rem solid transparent;
+  position: absolute;
+  right: 0;
+}
+
+.triangle-left {
+  height: 0;
+  width: 0;
+  border-left: 52rem solid var(--brand-primary);
+  border-bottom: 3.9rem solid transparent;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+
 }
 
 .welcome-section img {
@@ -87,7 +125,6 @@ h1 {
   font-size: 32px;
   color: var(--brand-secondary);
   margin: 0;
-  margin-left: 18px;
   font-family: sans-serif;
 }
 
@@ -105,12 +142,15 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-right:var(--main-padding) ;
+  padding-left:var(--main-padding) ;
   padding-bottom: 25px;
   padding-top: 25px;
+
 }
 
 .search-section > * ion-icon {
-  height: 36px;
+  height: 24px;
   width: 36px;
 }
 
@@ -118,14 +158,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-self: center;
-  width: 90%;
+  width: 100%;
   height: auto;
   color: #03c180;
   background-color: var(--bg_default);
-  border-radius: 12px;
-  padding: 18px;
-  padding-left: 0;
-  padding-top: 8px;
+  border-radius: var(--card-radius);
   box-shadow: 0 0 5px 0  rgba(0, 0, 0, 0.5);
   padding-bottom: 0;
 }
@@ -135,7 +172,10 @@ h1 {
   align-items: center;
   gap: 24px;
   height: 100%;
+  padding: 8px;
   padding-left: 16px;
+
+  
 }
 
 .sort-div {
@@ -158,12 +198,12 @@ h1 {
   padding-bottom: 12px;
 }
 
-.search-card > * textarea {
+.search-card > * input {
   border: 0;
   font-size: 1.5rem;
   overflow: hidden;
   width: 100%;
-  height: 40px;
+  height: max-content;
   padding-top: 6px;
 }
 
@@ -173,8 +213,7 @@ h1 {
 
 hr {
   margin: 0;
-  margin-right: -18px;
-  width: auto;
+  width: 100%;
   color: var(--body-text);
 }
 
@@ -213,12 +252,14 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding: 12px;
+  padding-right:var(--main-padding) ;
+  padding-left:var(--main-padding) ;
 }
 
 .card-image {
   width: 100%;
   height: 45%;
+  border-radius: var(--card-radius) var(--card-radius) 0 0;
 }
 
 .card-cotants {
@@ -258,12 +299,11 @@ hr {
   width: 100%;
   height: 100%;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
+  border-radius: var(--card-radius);
 }
 
 .search-result {
   width: 100%;
-  padding-left: 12px;
 }
 
 .rating-icon {
@@ -279,7 +319,7 @@ hr {
   align-self: start;
 }
 
-.footer-msg {
+footer {
   background-color: var(--bg_body);
   margin: 0;
   display: none;
@@ -300,6 +340,19 @@ hr {
     align-items: center;
   }
 
+  .triangle-right {
+    border-right: 70rem solid var(--brand-secondary);
+  }
+  
+  .triangle-left {
+    width: 50%;
+    border-left: 52rem solid var(--brand-primary);
+  }
+
+  .welocme-text {
+    align-items: center;
+  }
+
   .dropdown {
     padding-left: 8px;
   }
@@ -307,13 +360,18 @@ hr {
   .search-div {
     width: 60%;
     display: flex;
-    height: 100%;
-    align-items: flex-start;
+    height: inherit;
+    padding: 6px;
+    align-items: center;
   }
 
-  .search-card > * textarea {
+  .search-card > * input {
     display: flex;
+    align-self: center;
     width: 70%;
+    height: 100%;
+    border: 0;
+
   }
 
   .search-card {
@@ -321,9 +379,6 @@ hr {
     padding-top: 0;
   }
 
-  .search-card > textarea {
-    font-size: 10px;
-  }
 
   .sort-div {
     width: 40%;
@@ -340,7 +395,7 @@ hr {
   .card-section-holder {
     display: grid;
     gap: 18px;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .card-div {
@@ -368,3 +423,19 @@ hr {
     font-weight: 700;
   }
 }
+
+@media only screen and (min-width: 1080px) {
+
+  .card-section-holder {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+}
+@media only screen and (min-width: 1500px) {
+
+  .card-section-holder {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+}
+
