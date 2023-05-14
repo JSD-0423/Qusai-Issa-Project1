@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web devalopment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo-div">
+                <h1 id="logo">
+                    Web Topics
+                </h1>
+            </div>
+
+            <div class="navbar-buttons">
+                <button type="button" id="dark-mode-btn">
+                    <ion-icon name="moon-outline"></ion-icon> <span class="btn-text">Dark mode</span>
+                </button>
+                <button type="button" id="fav-btn">
+                    <ion-icon name="heart-outline"></ion-icon><span class="btn-text">Favourites</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="welcome-section">
+        <!-- <img src="assits/welcome-bg.PNG" alt="welcome background">-->
+        <div class="welcome-bg">
+            <div class="triangle-left"></div>
+
+            <div class="triangle-right"></div>
+        </div>
+        <div class="welocme-text">
+            <h2>
+                Welcome to our website!
+            </h2>
+            <p>
+                We have a new design that's fresh, modern, and easy to use.
+            </p>
+        </div>
+
+    </main>
+
+    <section class="search-section">
+        <div class="search-card">
+            <div class="search">
+                <ion-icon name="search-outline" type="icon"></ion-icon>
+                <input placeholder="Search the website..."></input>
+            </div>
+            <hr>
+            <div class="sort">
+
+                <div class="vl" id="my-vl"></div>
+                <div class="dropdown">
+                    <h5>Sort by:</h5>
+                    <select class="dropbtn">
+                        <option value="Default" selected>Default</option>
+                        <option value="starter">Starter</option>
+                        <option value="professional">Professional</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+                </div>
+                <div class="vl"></div>
+                <div class="dropdown">
+                    <h5>Filter by:</h5>
+                    <select class="dropbtn">
+                        <option value="Default" selected>Default</option>
+                        <option value="starter">Starter</option>
+                        <option value="professional">Professional</option>
+                        <option value="corporate">Corporate</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </div>
+        <h2 class="search-result">"24" Web Topics Found</h2>
+    </section>
+
+    <section class="card-section-holder">
+
+    </section>
+    <footer>
+        <p class="footer-txt">Devaloped with <span class="heart-icon">❤</span> 2023 ©</p>
+
+    </footer>
+
+    <section class="fav fixed-bottom" id="fav-sec">
+        <h3>My Favourite Topics</h3>
+        <div class="fav-cards">
+
+            <div class="card">
+
+                <img class="card-image" src='./assits/logos/sql.png' alt='SQL'>
+                <div class="card-cotants">
+                    <div class="card-title-div">
+                        <h3 class="card-title">SQL</h3>
+                    </div>
+                    <div class="stars" id="rater">
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-half"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+
+                <img class="card-image" src='./assits/logos/sql.png' alt='SQL'>
+                <div class="card-cotants">
+                    <div class="card-title-div">
+                        <h3 class="card-title">SQL</h3>
+                    </div>
+                    <div class="stars" id="rater">
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-half"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-image" src='./assits/logos/angular.png' alt='Angular'>
+                <div class="card-cotants">
+                    <div class="card-title-div">
+                        <h3 class="card-title">Angular</h3>
+                    </div>
+                    <div class="stars" id="rater">
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-half"></ion-icon>
+                        <ion-icon class="rating-icon" name="star-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+<script src="index.js" type="text/javascript"></script>
+
+</html>
