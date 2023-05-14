@@ -285,6 +285,8 @@ option {
   height: 55%;
   padding-bottom: var(--main-padding);
   display: grid;
+  grid-template-rows: 0.1fr 1fr 1fr 1fr;
+
 }
 
 .card-title-div {
@@ -299,6 +301,8 @@ option {
   text-overflow: ellipsis;
   margin: 0;
   color:var(--body-text);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card-description {
@@ -308,6 +312,8 @@ option {
   margin-top: 16px;
   font-weight: 100;
   color:var(--body-text);
+  font-size: 12px;
+  font-weight: 600;
 
 }
 
@@ -315,11 +321,9 @@ option {
   width: 100%;
   font-size: 0.9rem;
   margin: 0;
-  margin-top: 12px;
   margin-bottom: 12px;
   font-weight: 100;
   color: var(--secondary-color);
-  align-self:flex-end;
 }
 
 .card {
@@ -343,7 +347,7 @@ option {
 
 .stars {
   margin-top: auto;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   display: inline-flex;
   align-self: start;
 }
@@ -367,7 +371,7 @@ footer > p {
 .fav {
   display: none;
   background-color: var(--bg_body);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .fav > h3 {
@@ -401,6 +405,7 @@ button:hover {
   padding: var(--main-padding);
   gap: 18px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .fav-cards > .card {
   width: 140px;
@@ -458,7 +463,7 @@ button:hover {
   }
 
   .search {
-    width: 60%;
+    width: 100%;
     display: flex;
     height: inherit;
     padding: 6px;
@@ -500,7 +505,6 @@ button:hover {
 
   .card {
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
-    height: 400px;
   }
 
   .card-description {
@@ -523,10 +527,13 @@ button:hover {
     font-size: 15px;
     font-weight: 700;
   }
+  :root {
+    --main-padding: 36px;
+  }
 }
 
 @media only screen and (min-width: 850px) {
-
+  
   .card-section-holder {
     grid-template-columns: repeat(4, 1fr);
   }
