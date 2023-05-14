@@ -2,6 +2,18 @@
   return document.querySelector(selector);
 } */
 
+let darkBtn = document.getElementById("dark-mode-btn")
+darkBtn.onclick = ()=>{
+    document.body.classList.toggle("dark-theme")
+}
+
+let favBtn = document.getElementById("fav-btn")
+let favSec = document.getElementById("fav-sec")
+
+favBtn.onclick = ()=>{
+  favSec.classList.toggle("show-fav")
+}
+
 const cardData = [
   {
     image: 'assits/logos/accessibility.png',

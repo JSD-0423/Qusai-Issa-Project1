@@ -18,12 +18,24 @@
   --font-family: 'Nunito Sans', sans-serif;
 }
 
+.dark-theme {
+  /* Dark Mode */
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+}
+
 body {
   height: fit-content;
   margin: 0;
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
 }
+
 
 header {
   height: 90px;
@@ -41,7 +53,7 @@ header {
   height: 90px;
   padding-top: 5px;
   padding-bottom: 5px;
-  background-color: #fff;
+  background-color: var(--bg_default);
   border-bottom: #333 0 solid;
   width: 100%;
 }
@@ -80,6 +92,7 @@ ion-icon {
   flex-direction: column;
   padding-right:var(--main-padding) ;
   padding-left:var(--main-padding) ;
+  background-color: var(--bg_default);
 }
 
 .welcome-bg {
@@ -114,12 +127,13 @@ ion-icon {
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;}
 
-.welcome-section > p {
+.welcome-section >* p {
   font-size: 1.1rem;
   margin-top: 8px;
-  margin-left: 18px;
+  margin-left: 0;
   font-weight: 100;
   padding-right: 8px;
+  color: var(--body-text);
 }
 
 .search-section {
@@ -146,7 +160,7 @@ ion-icon {
   align-self: center;
   width: 100%;
   height: auto;
-  color: #03c180;
+  color: var(--brand-secondary);
   background-color: var(--bg_default);
   border-radius: var(--card-radius);
   box-shadow: 0 0 5px 0  rgba(0, 0, 0, 0.5);
@@ -192,6 +206,7 @@ ion-icon {
   width: 100%;
   height: max-content;
   padding-top: 6px;
+  background-color: var(--bg_default);
 }
 
 .search-card > * ion-icon {
@@ -224,12 +239,19 @@ hr {
   width: 24px;
 }
 
+option {
+  color:var(--body-text);
+}
+
 .dropbtn {
   display: flex;
   padding: 0;
   border: 0;
   width: 100%;
   text-align: start;
+  background-color: var(--bg_default);
+  color:var(--body-text);
+
 }
 
 .dropdown-content {
@@ -270,7 +292,7 @@ hr {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-
+  color:var(--body-text);
 }
 
 .card-description {
@@ -279,6 +301,8 @@ hr {
   margin: 0;
   margin-top: 16px;
   font-weight: 100;
+  color:var(--body-text);
+
 }
 
 .card-author {
@@ -301,6 +325,7 @@ hr {
 }
 
 .search-result {
+  color: var(--body-text);
   width: 100%;
 }
 
@@ -323,9 +348,23 @@ footer {
   display: none;
 }
 
-.footer-msg > p {
+footer > p {
   margin: 0;
   text-align: center;
+  color:var(--body-text);
+}
+
+.heart-icon {
+  color: var(--heart-color);
+}
+
+.fav-cards {
+  display: none;
+  background-color: var(--bg_body);
+}
+
+.show-fav {
+  display: block;
 }
 
 @media only screen and (min-width: 700px) {
