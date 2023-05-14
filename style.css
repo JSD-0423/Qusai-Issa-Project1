@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
-@import url('https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --primary-color: #007bff;
   --secondary-color: #6c757d;
@@ -15,16 +15,14 @@
   --gold-color: #cdb73b;
   --main-padding: 18px;
   --card-radius: 12px;
-
-  --font-family: 'Lato', sans-serif;
+  --font-family: 'Nunito Sans', sans-serif;
 }
 
 body {
   height: fit-content;
   margin: 0;
-  font-family: sans-serif;
   overflow-x: hidden;
-
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 header {
@@ -48,7 +46,7 @@ header {
   width: 100%;
 }
 
-.navbar-buttons-div {
+.navbar-buttons {
   display: flex;
   margin-right: 30px;
   gap: 12px;
@@ -114,8 +112,7 @@ ion-icon {
   font-size: 32px;
   color: var(--brand-secondary);
   margin: 0;
-  font-family: sans-serif;
-}
+  font-family: 'Nunito Sans', sans-serif;}
 
 .welcome-section > p {
   font-size: 1.1rem;
@@ -156,7 +153,7 @@ ion-icon {
   padding-bottom: 0;
 }
 
-.search-div {
+.search {
   display: inline-flex;
   align-items: center;
   gap: 24px;
@@ -167,11 +164,12 @@ ion-icon {
   
 }
 
-.sort-div {
+.sort {
   display: grid;
   padding-left: 18px;
   grid-template-columns: 1% 49% 1% 49%;
   height: 100%;
+  
 }
 
 .vl {
@@ -258,12 +256,21 @@ hr {
   padding-left: 18px;
   padding-right: 18px;
   height: 55%;
+  padding-bottom: var(--main-padding);
 }
 
+.card-title-div {
+  height:max-content;
+}
 .card-title {
-  display: inline-flex;
-  width: 100%;
+  font-weight: 900;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
+
 }
 
 .card-description {
@@ -282,9 +289,10 @@ hr {
   margin-bottom: 12px;
   font-weight: 100;
   color: var(--secondary-color);
+  align-self:flex-end;
 }
 
-.card-div {
+.card {
   background-color: var(--bg_default);
   width: 100%;
   height: 100%;
@@ -302,7 +310,7 @@ hr {
   color: var(--gold-color);
 }
 
-.stars-div {
+.stars {
   margin-top: auto;
   margin-bottom: 8px;
   display: inline-flex;
@@ -349,7 +357,7 @@ footer {
     padding-left: 8px;
   }
 
-  .search-div {
+  .search {
     width: 60%;
     display: flex;
     height: inherit;
@@ -372,7 +380,7 @@ footer {
   }
 
 
-  .sort-div {
+  .sort {
     width: 40%;
   }
 
@@ -390,8 +398,9 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card-div {
+  .card {
     box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+    height: 400px;
   }
 
   .card-description {
@@ -434,5 +443,9 @@ footer {
     grid-template-columns: repeat(6, 1fr);
   }
 
-}
+  .triangle-left {
+    width: 50%;
+    border-left: 77rem solid var(--brand-primary);
+  }
 
+}

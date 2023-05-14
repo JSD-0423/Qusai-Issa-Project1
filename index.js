@@ -199,13 +199,16 @@ const cardData = [
 
 document.querySelector('.card-section-holder').innerHTML = cardData.map((card) => `
         
-        <div class="card-div">
-            
+        <div class="card">
+                
                 <img class= "card-image" src=${card.image} alt="${card.title}">
                 <div class="card-cotants">
-                  <h4 class="card-description px-2">${card.description}</h4>
-                  <h3 class="card-title px-2">${card.title}</h4>
-                  <div class ="stars-div" id="rater">
+                  <h4 class="card-description ">${card.description}</h4>
+                  <div class="card-title-div">
+                    <h3 class="card-title">${card.title}</h3>
+                  </div>
+                  
+                  <div class ="stars" id="rater">
                     <ion-icon class ="rating-icon" name="star"></ion-icon>
                     <ion-icon class ="rating-icon" name="star-half"></ion-icon>
                     <ion-icon class ="rating-icon" name="star-outline"></ion-icon>
