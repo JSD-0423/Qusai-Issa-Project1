@@ -24,7 +24,7 @@
   --brand-secondary: #03c180;
   --bg_default: #1a1a1a;
   --bg_body: #282828;
-  --lines-color: #000000;
+  --lines-color: #000;
   --body-text: #ededed;
   --heart-color: #dc143c;
 }
@@ -35,7 +35,6 @@ body {
   overflow-x: hidden;
   font-family: 'Nunito Sans', sans-serif;
 }
-
 
 header {
   height: 90px;
@@ -94,8 +93,8 @@ ion-icon {
 .welcome-section {
   display: flex;
   flex-direction: column;
-  padding-right:var(--main-padding) ;
-  padding-left:var(--main-padding) ;
+  padding-right: var(--main-padding);
+  padding-left: var(--main-padding);
   background-color: var(--bg_default);
 }
 
@@ -107,7 +106,6 @@ ion-icon {
 .triangle-right {
   height: 0;
   width: 50%;
-
   border-right: 70rem solid var(--brand-secondary);
   border-bottom: 2.9rem solid transparent;
   position: absolute;
@@ -122,16 +120,16 @@ ion-icon {
   position: absolute;
   z-index: 1;
   right: 0;
-
 }
 
-.welcome-section >* h2 {
+.welcome-section > * h2 {
   font-size: 32px;
   color: var(--brand-secondary);
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;}
+  font-family: 'Nunito Sans', sans-serif;
+}
 
-.welcome-section >* p {
+.welcome-section > * p {
   font-size: 1.1rem;
   margin: 0;
   margin-bottom: 1.5em;
@@ -146,11 +144,10 @@ ion-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-right:var(--main-padding) ;
-  padding-left:var(--main-padding) ;
+  padding-right: var(--main-padding);
+  padding-left: var(--main-padding);
   padding-bottom: 25px;
   padding-top: 25px;
-
 }
 
 .search-section > * ion-icon {
@@ -178,8 +175,6 @@ ion-icon {
   height: 100%;
   padding: 8px;
   padding-left: 16px;
-
-  
 }
 
 .sort {
@@ -187,7 +182,6 @@ ion-icon {
   padding-left: 18px;
   grid-template-columns: 1% 49% 1% 49%;
   height: 100%;
-  
 }
 
 .vl {
@@ -244,7 +238,7 @@ hr {
 }
 
 option {
-  color:var(--body-text);
+  color: var(--body-text);
 }
 
 .dropbtn {
@@ -254,8 +248,7 @@ option {
   width: 100%;
   text-align: start;
   background-color: var(--bg_default);
-  color:var(--body-text);
-
+  color: var(--body-text);
 }
 
 .dropdown-content {
@@ -268,8 +261,8 @@ option {
   flex-direction: column;
   align-items: center;
   gap: 32px;
-  padding-right:var(--main-padding) ;
-  padding-left:var(--main-padding) ;
+  padding-right: var(--main-padding);
+  padding-left: var(--main-padding);
 }
 
 .card-image {
@@ -286,21 +279,20 @@ option {
   padding-bottom: var(--main-padding);
   display: grid;
   grid-template-rows: 0.1fr 1fr 1fr 1fr;
-
 }
 
 .card-title-div {
-  height:max-content;
+  height: max-content;
 }
+
 .card-title {
-  font-weight: 900;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  color:var(--body-text);
+  color: var(--body-text);
   font-size: 16px;
   font-weight: 600;
 }
@@ -310,11 +302,9 @@ option {
   padding: 0;
   margin: 0;
   margin-top: 16px;
-  font-weight: 100;
-  color:var(--body-text);
+  color: var(--body-text);
   font-size: 12px;
   font-weight: 600;
-
 }
 
 .card-author {
@@ -358,10 +348,10 @@ footer {
   display: none;
 }
 
-footer > p {
+.footer-txt {
   margin: 0;
   text-align: center;
-  color:var(--body-text);
+  color: var(--body-text);
 }
 
 .heart-icon {
@@ -387,7 +377,7 @@ footer > p {
 }
 
 button:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .fixed-bottom {
@@ -407,15 +397,15 @@ button:hover {
   overflow-x: scroll;
   overflow-y: hidden;
 }
+
 .fav-cards > .card {
   width: 140px;
   height: 150px;
 }
 
 @media only screen and (min-width: 700px) {
-
   .navbar-buttons {
-    width: 30%;  
+    width: 30%;
   }
 
   nav > * button {
@@ -446,7 +436,7 @@ button:hover {
   .triangle-right {
     border-right: 70rem solid var(--brand-secondary);
   }
-  
+
   .triangle-left {
     width: 50%;
     border-left: 52rem solid var(--brand-primary);
@@ -455,8 +445,6 @@ button:hover {
   .welocme-text {
     align-items: center;
   }
-
-
 
   .dropdown {
     padding-left: 8px;
@@ -476,14 +464,12 @@ button:hover {
     width: 70%;
     height: 100%;
     border: 0;
-
   }
 
   .search-card {
     flex-direction: row;
     padding-top: 0;
   }
-
 
   .sort {
     width: 40%;
@@ -513,7 +499,6 @@ button:hover {
     align-self: start;
     height: auto;
     width: 80%;
-    
   }
 
   footer {
@@ -527,25 +512,25 @@ button:hover {
     font-size: 15px;
     font-weight: 700;
   }
+
   :root {
     --main-padding: 36px;
   }
 }
 
 @media only screen and (min-width: 850px) {
-  
   .card-section-holder {
     grid-template-columns: repeat(4, 1fr);
   }
+}
 
 @media only screen and (min-width: 1080px) {
   .card-section-holder {
     grid-template-columns: repeat(5, 1fr);
+  }
 }
 
-}
 @media only screen and (min-width: 1500px) {
-
   .card-section-holder {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -554,5 +539,4 @@ button:hover {
     width: 50%;
     border-left: 77rem solid var(--brand-primary);
   }
-
 }

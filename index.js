@@ -2,17 +2,17 @@
   return document.querySelector(selector);
 } */
 
-let darkBtn = document.getElementById("dark-mode-btn")
-darkBtn.onclick = ()=>{
-    document.body.classList.toggle("dark-theme")
-}
+const darkBtn = document.getElementById('dark-mode-btn');
+darkBtn.onclick = () => {
+  document.body.classList.toggle('dark-theme');
+};
 
-let favBtn = document.getElementById("fav-btn")
-let favSec = document.getElementById("fav-sec")
+const favBtn = document.getElementById('fav-btn');
+const favSec = document.getElementById('fav-sec');
 
-favBtn.onclick = ()=>{
-  favSec.classList.toggle("show-fav")
-}
+favBtn.onclick = () => {
+  favSec.classList.toggle('show-fav');
+};
 
 const cardData = [
   {
