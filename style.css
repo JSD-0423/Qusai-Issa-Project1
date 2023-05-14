@@ -324,6 +324,10 @@ option {
   border-radius: var(--card-radius);
 }
 
+.card :hover {
+  cursor: pointer;
+}
+
 .search-result {
   color: var(--body-text);
   width: 100%;
