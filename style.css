@@ -82,6 +82,10 @@ nav > * button {
   border-radius: 8px;
 }
 
+.btn-text {
+  display: none;
+}
+
 ion-icon {
   height: 55%;
   width: 55%;
@@ -129,8 +133,8 @@ ion-icon {
 
 .welcome-section >* p {
   font-size: 1.1rem;
-  margin-top: 8px;
-  margin-left: 0;
+  margin: 0;
+  margin-bottom: 1.5em;
   font-weight: 100;
   padding-right: 8px;
   color: var(--body-text);
@@ -368,6 +372,27 @@ footer > p {
 }
 
 @media only screen and (min-width: 700px) {
+
+  .navbar-buttons {
+    width: 30%;  
+  }
+
+  nav > * button {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  nav > * button > ion-icon {
+    width: 30%;
+  }
+
+  .btn-text {
+    display: block;
+    text-align: center;
+    width: 70%;
+  }
+
   .footer-msg {
     display: block;
     align-items: center;
