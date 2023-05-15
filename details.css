@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
 
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #fff;
+    --bg_body: #f0f9ff;
+    --bg_body2: #d4ecfc;
+    --lines-color: #ddd;
+    --body-text: #333;
+    --heart-color: #dc143c;
+    --gold-color: #cdb73b;
+    --main-padding: 18px;
+    --card-radius: 12px;
+    --font-family: 'Nunito Sans', sans-serif;
+    --bg_dark-body: #282828;
+
+  }
+  
+  .dark-theme {
+    /* Dark Mode */
+    --brand-primary: #0768ac;
+    --brand-secondary: #03c180;
+    --bg_default: #1a1a1a;
+    --bg_body: #282828;
+    --lines-color: #000;
+    --body-text: #ededed;
+    --heart-color: #dc143c;
+  }
+
 body {
     overflow-x: hidden;
     font-family: 'Nunito Sans', sans-serif;
@@ -8,5 +38,24 @@ body {
 
 .topic-info {
     background-color: var(--bg_dark-body);
-    height: 200px;
+    color: white;
+    padding: var(--main-padding) 18% var(--main-padding) 18%;
+    display: flex;
+
 }
+
+.topic-type {
+    color: var(--brand-secondary);
+    margin: 0;
+
+}
+
+.topic-tittle {
+    margin: 0;
+}
+
+.topic-description {
+    width: 60%;
+}
+
+
