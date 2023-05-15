@@ -122,7 +122,7 @@ Example command:
 
 ### Deployment
 
-It will be deployed after merge
+https://jsd-0423.github.io/Qusai-Issa-Project1/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
