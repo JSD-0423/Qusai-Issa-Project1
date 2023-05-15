@@ -25,11 +25,10 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 💼 Portfolio <a name="about-project"></a>
+# 💼 Web Topics <a name="about-project"></a>
 
-> **Portfolio**
-> Hello it's me Qusai Issa from Palestine<br/>
-> and this is my programming languages rating website.
+Hello it's me Qusai Issa from Palestine<br/>
+and this is my programming languages rating website.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,7 +64,7 @@ This Project was buiilt with HTML, CSS and JavaScript
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link][(https://qusai122.github.io/Portfolio/)](https://jsd-0423.github.io/Qusai-Issa-Project1/)
+- [Live Demo Link](https://jsd-0423.github.io/Qusai-Issa-Project1/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
