@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;700&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--bg_body);
+}
+
+.topic-info {
+    background-color: var(--bg_dark-body);
+    height: 200px;
+}

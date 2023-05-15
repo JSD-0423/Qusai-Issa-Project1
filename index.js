@@ -233,6 +233,6 @@ document.querySelector('.card-section-holder').innerHTML = cardData.map((card) =
     
 `).join('');
 
-const openDetails=()=>{
-  document.location.href ="details.html"
+const openDetails=() =>{
+  document.location.href ='details.html';
 }
