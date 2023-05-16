@@ -39,7 +39,7 @@ body {
 .topic-info {
     background-color: var(--bg_dark-body);
     color: white;
-    padding: var(--main-padding) 18% var(--main-padding) 18%;
+    padding: var(--main-padding) 12% var(--main-padding) 12%;
     display: flex;
 
 }
@@ -58,4 +58,84 @@ body {
     width: 60%;
 }
 
+.details-contant {
+    width: 60%;
+}
 
+.details-card {
+    height: fit-content;
+    padding: 0.1rem;
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  
+    color: black;
+    width: 40%;
+    height: 12.5rem;
+    object-fit: cover;
+}
+
+.details-card > img {
+    width: 100%;
+}
+
+.details-card-cotants {
+  padding: 1rem;
+  background-color: white;
+
+}
+.details-card-cotants p {
+  margin: 0.5rem 0;
+}
+.details-card-cotants span {
+  font-weight: 400;
+}
+
+.add-favorites {
+  border: 1px solid #dddddd;
+  padding: 0.5rem 1.4rem;
+  text-align: left;
+}
+
+.add-favorites-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--brand-secondary);
+  color: white;
+  padding: 0.8rem 0.8rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.under-btn {
+    color: gray;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.sub-topics {
+  margin-top: 2rem;
+  background-color: var(--bg_default);
+  border-radius: 0.3rem;
+  border: 1px solid var(--lines-color);
+}
+.sub-topics h1 {
+  padding-left: 1.5rem;
+  margin-block: 1rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 700px) {
+  .sub-topics h1 {
+      padding-right: 20rem;
+    }
+    .sub-topics {
+      width: fit-content;
+    }
+    .topic-text,
+    .sub-topics {
+      margin-left: 17.5rem;
+    }    
+}
