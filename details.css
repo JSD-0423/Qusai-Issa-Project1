@@ -1,10 +1,11 @@
 body {
-overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 main {
   background-color: var(--bg_body);
 }
+
 .topic {
   background-color: #333;
   width: 100%;
@@ -19,16 +20,18 @@ main {
   color: var(--brand-secondary);
   margin: 0;
 }
+
 .topic-text {
   height: 100%;
   color: white;
   width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
 }
+
 .topic-description {
   padding-top: 1rem;
 }
@@ -37,22 +40,27 @@ main {
   height: fit-content;
   padding: 0.1rem;
   background-color: white;
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-
+  box-shadow:
+    rgba(17, 17, 26, 0.1) 0 1px 0,
+    rgba(17, 17, 26, 0.1) 0 8px 24px,
+    rgba(17, 17, 26, 0.1) 0 16px 48px;
   color: black;
   margin-top: 1rem;
   width: 100%;
 }
+
 .topic-details {
   padding: 1rem;
 }
+
 .topic-details p {
   margin: 0.5rem 0;
 }
+
 .topic-details span {
   font-weight: 400;
 }
+
 .topic > * img {
   height: auto;
   width: 100%;
@@ -60,13 +68,12 @@ main {
 }
 
 .add-favorites-container {
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   padding: 0.5rem 1.4rem;
   text-align: left;
 }
 
 .add-favorites-button {
-  justify-content: space-between;
   align-items: center;
   background-color: var(--brand-secondary);
   color: white;
@@ -81,10 +88,10 @@ main {
   justify-content: center;
   gap: 8px;
 }
-.add-favorites-button ion-icon {
-height: 30px;
-width: 30px;
 
+.add-favorites-button ion-icon {
+  height: 30px;
+  width: 30px;
 }
 
 .unlimited-credits {
@@ -93,6 +100,7 @@ width: 30px;
   font-weight: 100;
   text-align: center;
 }
+
 .sub-topics-container {
   margin-top: 2rem;
   background-color: var(--bg_default);
@@ -102,17 +110,20 @@ width: 30px;
   margin-right: 15%;
   width: 70%;
 }
+
 .sub-topics-container h1 {
   padding-right: 0;
   padding-left: 1.5rem;
   margin-block: 1rem;
   font-weight: 700;
-  color:var(--body-text);
+  color: var(--body-text);
 }
+
 ul {
   margin: 0;
   padding: 0;
 }
+
 li {
   display: flex;
   gap: 1rem;
@@ -122,17 +133,13 @@ li {
   color: var(--body-text);
 }
 
-.add-favorites-button {
-  cursor: pointer;
-}
-
 .green-checkmark {
   color: green;
   width: 24px;
   height: 24px;
 }
 
-footer{
+footer {
   padding-top: var(--main-padding);
   padding-bottom: var(--main-padding);
 }
@@ -143,10 +150,11 @@ footer{
 
 /* desktop view */
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 920px) {
   .sub-topics-container h1 {
     padding-right: 20rem;
   }
+
   .sub-topics-container {
     width: 40%;
     margin-left: 15%;
@@ -156,22 +164,23 @@ footer{
     padding-top: 1.7rem;
     padding-bottom: 2rem;
     display: block;
-    
   }
+
   .topic-card {
     position: absolute;
     right: 12%;
     max-width: 30rem;
     width: 28%;
     top: 15rem;
-
   }
+
   .topic-text {
     width: 100%;
     align-items: flex-start;
     text-align: left;
   }
-  .topic-description{
+
+  .topic-description {
     width: 60%;
   }
 }

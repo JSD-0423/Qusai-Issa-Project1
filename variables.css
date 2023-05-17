@@ -1,29 +1,28 @@
 :root {
-    --primary-color: #007bff;
-    --secondary-color: #6c757d;
-    --brand-primary: #0768ac;
-    --brand-secondary: #03c180;
-    --bg_default: #fff;
-    --bg_body: #f0f9ff;
-    --bg_body2: #d4ecfc;
-    --lines-color: #ddd;
-    --body-text: #333;
-    --heart-color: #dc143c;
-    --gold-color: #cdb73b;
-    --main-padding: 18px;
-    --card-radius: 12px;
-    --font-family: 'Nunito Sans', sans-serif;
-    --bg_dark-body: #282828;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #fff;
+  --bg_body: #f0f9ff;
+  --bg_body2: #d4ecfc;
+  --lines-color: #ddd;
+  --body-text: #333;
+  --heart-color: #dc143c;
+  --gold-color: #cdb73b;
+  --main-padding: 18px;
+  --card-radius: 12px;
+  --font-family: 'Nunito Sans', sans-serif;
+  --bg_dark-body: #282828;
+}
 
-  }
-  
-  .dark-theme {
-    /* Dark Mode */
-    --brand-primary: #0768ac;
-    --brand-secondary: #03c180;
-    --bg_default: #1a1a1a;
-    --bg_body: #282828;
-    --lines-color: #000;
-    --body-text: #ededed;
-    --heart-color: #dc143c;
-  }
+.dark-theme {
+  /* Dark Mode */
+  --brand-primary: #0768ac;
+  --brand-secondary: #03c180;
+  --bg_default: #1a1a1a;
+  --bg_body: #282828;
+  --lines-color: #000;
+  --body-text: #ededed;
+  --heart-color: #dc143c;
+}
