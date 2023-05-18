@@ -211,7 +211,7 @@ const cardData = [
 
 document.querySelector('.card-section-holder').innerHTML = cardData.map((card) => `
         
-        <div class="card">
+        <div class="card" onclick="openDetails()">
                 
                 <img class= "card-image" src=${card.image} alt="${card.title}">
                 <div class="card-cotants">
@@ -232,3 +232,7 @@ document.querySelector('.card-section-holder').innerHTML = cardData.map((card) =
         </div>
     
 `).join('');
+
+const openDetails=() =>{
+  document.location.href ='details.html';
+}
