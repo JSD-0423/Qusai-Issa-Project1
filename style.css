@@ -51,6 +51,7 @@ nav > * button {
   background-color: var(--bg_default);
   border: 1px var(--secondary-color) solid;
   border-radius: 8px;
+  max-width: 160px;
 }
 
 .btn-text {
@@ -382,6 +383,7 @@ button:hover {
 @media only screen and (min-width: 700px) {
   .navbar-buttons {
     width: 30%;
+    justify-content: flex-end;
   }
 
   nav > * button {
